@@ -1,4 +1,10 @@
 $(document).ready(function() {
+  if(localStorage.getItem("users") === null){
+		var $users = [ ];
+		localStorage.setItem('users', JSON.stringify($users));
+	} else {
+		console.log(localStorage.getItem("users"));
+	}
   document.addEventListener('dragstart', drag);
   document.addEventListener('dragover', permitirDrop);
   document.addEventListener('drop', drop);
