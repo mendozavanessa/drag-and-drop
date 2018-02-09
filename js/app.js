@@ -1,13 +1,14 @@
 $(document).ready(function() {
   // Initialize Firebase
   var config = {
-    apiKey: 'AIzaSyCRd3pQMg8wzu3rKiX-Myf4ucE6s3f8vP0',
-    authDomain: 'install-collage.firebaseapp.com',
-    databaseURL: 'https://install-collage.firebaseio.com',
-    projectId: 'install-collage',
-    storageBucket: 'install-collage.appspot.com',
-    messagingSenderId: '162495257777'
+    apiKey: "AIzaSyApZ1KLdWqYhreGGncB-WjiZ3PVa6mf_tw",
+    authDomain: "drag-an-drop.firebaseapp.com",
+    databaseURL: "https://drag-an-drop.firebaseio.com",
+    projectId: "drag-an-drop",
+    storageBucket: "drag-an-drop.appspot.com",
+    messagingSenderId: "259125372032"
   };
+  firebase.initializeApp(config);
   document.addEventListener('dragstart', drag);
   document.addEventListener('dragover', permitirDrop);
   document.addEventListener('drop', drop);
